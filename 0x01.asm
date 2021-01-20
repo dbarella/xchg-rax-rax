@@ -6,5 +6,5 @@ section .text
 main:
 
 .loop:
-  xadd rax,rdx
-  loop .loop
+    xadd     rax,rdx
+    loop     .loop
