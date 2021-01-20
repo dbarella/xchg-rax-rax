@@ -1,5 +1,4 @@
-BITS 64
-
+bits 64
 global main
 
 section .text
