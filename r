@@ -4,7 +4,7 @@
 # because makefiles are stupid.
 
 # sane defaults
-set -euox pipefail
+set -euo pipefail
 IFS=$'\n\t'
 
 name="${1}"
@@ -17,7 +17,17 @@ function cleanup {
 }
 trap cleanup EXIT
 
+function helptext() {
+  echo 'good gdb commands:'
+  echo '  info registers'
+  echo '  print/x'
+  echo '  nexti'
+  echo '  info float'
+  echo '  info stack'
+}
+
 function main() {
+  helptext
   nasm -f elf64 "${src}"
   gcc "${obj}" -o "${bin}"
   gdb --silent "${bin}"

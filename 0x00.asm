@@ -1,10 +1,3 @@
-; $ nasm -f elf64 0x00.asm
-; $ gcc 0x00.o -o 0x00
-; $ gdb 0x00
-; (gdb) b debug
-; (gdb) r
-; (gdb) i r
-
 BITS 64
 
 global main
