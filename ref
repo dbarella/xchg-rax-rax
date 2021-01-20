@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# usage: do 0x00
-# because makefiles are stupid.
+# usage: ref
 
 # sane defaults
 set -euo pipefail
