@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# usage: do 0x00
+# because makefiles are stupid.
+
+# sane defaults
+set -euo pipefail
+IFS=$'\n\t'
+
+xdg-open x86/index.html

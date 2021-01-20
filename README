@@ -1,3 +1,5 @@
 ./r 0x00
+  do stuff in gdb
 
-do stuff in gdb
+./ref
+  opens the local x86 reference (not official, just for fun)
