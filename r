@@ -19,6 +19,7 @@ trap cleanup EXIT
 
 function helptext() {
   echo 'good gdb commands:'
+  echo '  disassemble main'
   echo '  info registers'
   echo '  print/x'
   echo '  nexti'
