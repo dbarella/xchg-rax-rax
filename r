@@ -25,6 +25,8 @@ function helptext() {
   echo '  nexti'
   echo '  info float'
   echo '  info stack'
+  echo '  info win'
+  echo '  fs next'
 }
 
 function main() {
