@@ -20,6 +20,6 @@ trap cleanup EXIT
 function main() {
   nasm -f elf64 "${src}"
   gcc "${obj}" -o "${bin}"
-  gdb "${bin}"
+  gdb --silent "${bin}"
 }
 main

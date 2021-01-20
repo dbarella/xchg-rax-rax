@@ -1,0 +1,3 @@
+to make the local .gdbinit file work, add
+  add-auto-load-safe-path /path/to/repo/.gdbinit
+to $HOME/.gdbinit
