@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # usage:
-#  (with 0x00 in copy buffer) init 0x00
+#  - go to the web page for the puzzle e.g. 0x00
+#  - copy the text
+#  - ./init 0x00
 #
 # if you have another template: 
 #  init 0x00 tmpl.asm
@@ -11,11 +13,10 @@ set -euox pipefail
 IFS=$'\n\t'
 
 # defaults to what i think is the name of the template
-name="${1}.asm"
-template="${2:-__tmpl__.asm}"
+readonly name="${1}.asm"
+readonly template="${2:-__tmpl__.asm}"
 
 function main() {
   cp "${template}" "${name}"
   xclip -out >> "${name}"
-}
-main
+}; main

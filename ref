@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# usage: ref
+# usage: ./ref
+# opens the local x86 reference in a browser window
 
 # sane defaults
 set -euo pipefail

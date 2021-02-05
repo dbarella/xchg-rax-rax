@@ -7,10 +7,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-name="${1}"
-src="${name}.asm"
-obj="${name}.o"
-bin="${name}"
+readonly name="${1}"
+readonly src="${name}.asm"
+readonly obj="${name}.o"
+readonly bin="${name}"
 
 function cleanup {
   rm "${obj}" "${bin}"
@@ -34,5 +34,4 @@ function main() {
   nasm -f elf64 "${src}"
   gcc "${obj}" -o "${bin}"
   gdb --silent "${bin}"
-}
-main
+}; main
