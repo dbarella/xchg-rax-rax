@@ -36,7 +36,7 @@ $ ./ref        # opens the local x86 reference in a browser window
 
 - `./ref`
   opens the local x86 reference (not official, may not be up-to-date, but
-  good enough for our purposes
+  good enough for our purposes)
 
 - `./init <name>`
   creates a new file called <name>.asm using the contents of your copy buffer
