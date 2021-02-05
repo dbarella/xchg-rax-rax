@@ -5,3 +5,4 @@ section .text
 
 main:
 
+xor      al,0x20
