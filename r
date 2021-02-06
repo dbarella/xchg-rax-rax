@@ -14,18 +14,22 @@ readonly bin="${name}"
 
 function cleanup {
   rm "${obj}" "${bin}"
-}
-trap cleanup EXIT
+}; trap cleanup EXIT
 
 function helptext() {
   echo 'good gdb commands:'
   echo '  nexti (or ni)'
   echo '  set $rax=0'
-  echo '  print/x (or p/x)'
+  echo '  run (or r): restart the program (experiment with inputs)'
+  echo '  print/x (or p/x): print hex'
+  echo '  print/u (or p/u): print unsigned int'
+  echo '  print/s (or p/s): print signed int'
   echo '  info float'
   echo '  info stack'
   echo '  info win'
   echo '  fs next'
+  echo '  remember in TUI mode the arrows scroll the window not the commands.'
+  echo '  to recall previous commands, use ctrl-p, ctrl-n (emacs bindings).'
 }
 
 function main() {
