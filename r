@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# usage: do 0x00
+# usage: ./r 0x00
 # because makefiles are stupid.
 
 # sane defaults
@@ -19,10 +19,9 @@ trap cleanup EXIT
 
 function helptext() {
   echo 'good gdb commands:'
-  echo '  disassemble main'
-  echo '  info registers'
-  echo '  print/x'
-  echo '  nexti'
+  echo '  nexti (or ni)'
+  echo '  set $rax=0'
+  echo '  print/x (or p/x)'
   echo '  info float'
   echo '  info stack'
   echo '  info win'
